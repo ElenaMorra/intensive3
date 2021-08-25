@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Фотогалерея</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            text-align: center;
+        }
+        h2{
+            margin: 50px auto;
+            font-size: 100;
+            font-weight: 300;
+            font-family: 'Droid Serif';
+            font-size: italic;
+        }
+        .btn-back{
+            width: 200px;
+            height: 70px;
+            border-radius: 50px;
+            background-color: blue;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(239, 244, 248);
+            cursor: pointer;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h2>Фотогалерея</h2>
+
+    <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <div class="modal-title">Просмотр изображения</div>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/for photo 1.jpg" alt="...">
+          </a>
+        </div>
+      
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/for photo 2.jpg" alt="...">
+        </a>
+      </div>
+    
+     <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/for photo 3.jpg" alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/for photo 4.jpg" alt="...">
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/for photo 1.jpg" alt="...">
+          </a>
+        </div>
+      
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/for photo 2.jpg" alt="...">
+        </a>
+      </div>
+    
+     <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/for photo 3.jpg" alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/for photo 4.jpg" alt="...">
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12"><a href="index.html"><button>На главную</button></a></div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // После загрузки DOM-дерева (страницы)
+        $(function() {
+            //при нажатии на ссылку, содержащую Thumbnail
+            $('a.thumbnail').click(function(e) {
+                //отменить стандартное действие браузера
+                e.preventDefault();
+                //присвоить атрибуту scr элемента img модального окна
+                //значение атрибута scr изображения, которое обёрнуто
+                //вокруг элемента a, на который нажал пользователь
+                $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+                //открыть модальное окно
+                $("#image-modal").modal('show');
+            });
+            //при нажатию на изображение внутри модального окна
+            //закрыть его
+            $('#image-modal .modal-body img').on('click', function() {
+                $("#image-modal").modal('hide')
+            });
+        });
+    </script>
+
+  </body>
+</html>

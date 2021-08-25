@@ -1,0 +1,184 @@
+header{
+    background: url(../images/s1200.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 900px;
+
+}
+.top-menu{
+    text-align: center;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-right:38px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.titles{
+    margin-top: 250px;
+    text-align: top-left;
+}
+/* .titles h1, .titles h2{
+    color: rgb(28, 209, 58);
+} */
+.titles h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;    
+}
+.titles h2{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'WindSong', cursive;
+    color: rgb(204, 50, 50);
+}
+.text{
+    margin-top: 100;
+    text-align: center;
+}
+.text p{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #777;
+    line-height: 1.5;
+}
+.head-but{
+    margin-top: 25px;
+}
+.blue-but{
+    width: 210px;
+    padding: 15px 0;
+    border: none;
+    margin: 0 auto;
+    border-radius: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    outline: none;
+}
+.blue-but:hover{
+    border: 1px solid blue;
+    background: white;
+    color: black;
+}
+/* Секция заголовка */
+.title-text{
+    text-align: center;
+    padding-top: 120px;
+}
+.title-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+.title-text p {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #777;
+    line-height: 1.5;
+}
+/* секцыя Кантэнд */
+.info{
+    margin-top: 20px;
+    margin-bottom: 118px;
+}
+.content{
+    text-align: center;
+    margin-top: 50px;
+}
+.content img{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
+.content h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+.content p{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #777;
+    line-height: 1.5;
+}
+/* секция about */
+
+.about{
+    padding-top: 84px;
+    background-color: #f7f7f7;
+}
+.about img{
+    display: block;
+    margin: auto;
+    width: 340px;
+    height: 220px;
+
+}
+.top-line img {
+    width: auto !important;
+    height: auto !important;
+    border: 0 !important;
+}
+.about-items-right h4,
+.about-items-left h4{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #222;
+}
+.about-items-right h4 span,
+.about-items-left h4 span{
+    text-transform: uppercase;
+}
+.about-items-right p,
+.about-items-left p{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #777;
+    line-height: 1.5;
+}
+
+
+.members{
+    margin-top: 150px;
+    text-align: center;
+    background: linear-gradient(45deg #fff, black);
+}
+.team > img{
+    padding-top: 18px;
+    margin: auto;
+    padding-left: 60px;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+}
+.team p{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #777;
+    line-height: 1.5;
+}
+.team h5{
+    padding-top: 30 px;
+}
+.menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
